@@ -26,12 +26,12 @@ setup(
     author="Mathieu Ginisty, Malo Boucé",
     author_email="maginist@student.42.fr",
     url="https://github.com/maginist/n-puzzle.git",
-    packages=["tests", "n-puzzle"],
+    packages=["tests", "n_puzzle"],
     entry_points={
         "console_scripts": [
+            "n_puzzle = n_puzzle.n_puzzle:cli",
             # SCRIPTS
-            "generate_puzzle = n-puzzle.scripts.generate_puzzle:cli",
-            ## BONUS
+            "generate_puzzle = n_puzzle.scripts.generate_puzzle:cli",
             # END OF SCRIPTS
         ],
     },
