@@ -8,7 +8,7 @@ requirements = [
     "numpy==1.21.4",
     "progress==1.6",
     "matplotlib==3.5.1",
-    "seaborn==0.11.2",
+    "colorama==0.4.4"
 ]
 
 test_requirements = ["pytest==6.2.5"]
@@ -31,7 +31,7 @@ setup(
         "console_scripts": [
             "n_puzzle = n_puzzle.n_puzzle:cli",
             # SCRIPTS
-            "generate_puzzle = n_puzzle.scripts.generate_puzzle:cli",
+            "gen = n_puzzle.scripts.generate_npuzzle:cli",
             # END OF SCRIPTS
         ],
     },
