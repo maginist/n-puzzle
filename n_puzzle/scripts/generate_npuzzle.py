@@ -95,9 +95,14 @@ def cli():
 	w = len(str(s * s))
 	print("# This puzzle is %s" % ("solvable" if solv else "unsolvable"))
 	print("%d" % s)
+	listed = []
 	for y in range(s):
+		test = ''
 		for x in range(s):
-			print("%s" % (str(puzzle[x + y * s]).rjust(w)),)
+			test += str(puzzle[x + y * s]).rjust(w) + ' '
+		listed.append(test)
+	for i in range(len(listed)):
+		print(listed[i])
 
 
 if __name__ == "__main__":
